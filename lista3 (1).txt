@@ -1,0 +1,60 @@
+nota=float(input("informe um numero de 0 a 10: "))
+while (nota>10) or (nota<0):
+    print("Nota inválida")
+    nota=float(input("informe um numero de 0 a 10: "))
+
+print("A nota é %.1f" %nota)
+
+
+usuario = input("usuário: ")
+senha = input("senha: ")
+
+while usuario == senha:
+	print("O usuário não pode ser igual a senha, tente novamente")
+	usuario = input("usuário--> ")
+	senha= input("senha-->")
+
+print("cadastrado efetuado com sucesso")
+
+
+a = 80000
+b = 200000
+aumento_a = 0.03
+aumento_b = 0.015
+anos = 0
+
+while a < b:
+    a = a + a * aumento_a
+    b = b + b * aumento_b
+    anos = anos + 1
+
+print(f'Serão necessarios {anos} anos para que o pais A alcance o pais B')
+
+
+n = int(input('n: '))
+a, b = 1, 1
+cont = 1 
+
+while cont <= n-2:
+    a, b = b, a+b
+    cont = cont + 1
+
+print(b)
+
+
+n1 = int(input('Primeiro numero: '))
+n2 = int(input('Segundo numero: '))
+
+if n1 < n2:
+	n1, n2 = n2, n1
+
+r1, mdc = n1%n2, n2
+while r1 != 0:
+	r1, mdc = mdc%r1, r1
+	
+print ('O mdc de (%d,%d) é: %d'%(n1,n2,mdc))
+
+
+
+
+
